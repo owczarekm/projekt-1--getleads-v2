@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" media="screen and (min-width: 576px)" href="styles/mobile.css" />
         <link rel="stylesheet" media="screen and (min-width: 786px)" href="styles/tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/desktop.css" />
         
 
         
@@ -18,26 +19,31 @@
     <body>
         <nav>
             <div class="container nav_containter">
-                
-                
-                        <div class="navbar_toggle">
-                                <a href="#" onclick="menuChangeVisible()"><i class="fas fa-bars "style="font-size:16px;"></i></a>
-                        </div>
-                    <div class="logo">
-                        <a href="#"><img src="media/logo-black.png" alt="Logo"></a>
-                    </div>
+                <div class="navbar_toggle">
+                    <a href="#" onclick="menuChangeVisible()"><i class="fas fa-bars "style="font-size:16px;"></i></a>
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="media/logo-black.png" alt="Logo"></a>
+                </div>
                
-                    
-                    <div class="menu_links" id="menu_hidden" style="display: none;">                    
+                <!-- menu ktore sie wyswietla przy szerokosci wiekszej od 992 -->
+                <div class="menu_links">                    
                         <span><a href="#">Section 2</a></span>
                         <span><a href="#">Section 3</a></span>
                         <span><a href="#">Section 4</a></span>
                         <span><a href="#">Section 5</a></span>
                         <span><a href="#"><button class="menu_button">Get Action</button></a></span>
-                    </div>
                 </div>
-                
-                                
+            </div>
+             <!-- "Hamburger menu" - ukryte menu ktore wyswietla sie do rozdzielczosci 992-->
+             <div class="menu_links" id="menu_hidden" style="display: none;">                    
+                    <span><a href="#">Section 2</a></span>
+                    <span><a href="#">Section 3</a></span>
+                    <span><a href="#">Section 4</a></span>
+                    <span><a href="#">Section 5</a></span>
+                    <span><a href="#"><button class="menu_button">Get Action</button></a></span>
+            </div>    
+                              
                 
           
            
