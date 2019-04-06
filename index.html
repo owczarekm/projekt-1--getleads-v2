@@ -3,18 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Projekt 1 - Getleads</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" media="screen and (min-width: 576px)" href="styles/mobile.css" />
         <link rel="stylesheet" media="screen and (min-width: 786px)" href="styles/tablet.css" />
-        <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/desktop.css" />
-        
-
-        
-
-            
+        <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1200px)" href="styles/desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/widescreen.css"/>
     </head>
     <body>
         <nav>
@@ -25,7 +22,7 @@
                 <div class="logo">
                     <a href="#"><img src="media/logo-black.png" alt="Logo"></a>
                 </div>
-               
+                
                 <!-- menu ktore sie wyswietla przy szerokosci wiekszej od 992 -->
                 <div class="menu_links">                    
                         <span><a href="#">Section 2</a></span>
@@ -35,43 +32,34 @@
                         <span><a href="#"><button class="menu_button">Get Action</button></a></span>
                 </div>
             </div>
-             <!-- "Hamburger menu" - ukryte menu ktore wyswietla sie do rozdzielczosci 992-->
-             <div class="menu_links" id="menu_hidden" style="display: none;">                    
-                    <span><a href="#">Section 2</a></span>
-                    <span><a href="#">Section 3</a></span>
-                    <span><a href="#">Section 4</a></span>
-                    <span><a href="#">Section 5</a></span>
-                    <span><a href="#"><button class="menu_button">Get Action</button></a></span>
+
+            <!-- "Hamburger menu" - ukryte menu ktore wyswietla sie do rozdzielczosci 992-->
+            <div class="menu_links" id="menu_hidden" style="display: none;">                    
+                <span><a href="#">Section 2</a></span>
+                <span><a href="#">Section 3</a></span>
+                <span><a href="#">Section 4</a></span>
+                <span><a href="#">Section 5</a></span>
+                <span><a href="#"><button class="menu_button">Get Action</button></a></span>
             </div>    
-                              
-                
-          
-           
-
-        
-
         </nav>
         
-       <section class="lp_containter">
+        <section class="lp_containter">
             <div class="lp_shadow ">
                 <div class="container center_flex">
-                   
-                        <div class="lp_content">
-                            <h1 class="lp_h1">Live your Power</h1>
-                            <p class="lp_p">At getleads Yoga something amazing is.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Sed auctor lorem et ultrices placerat. Pellentesque hendrerit tristique nibh eget imperdiet.
-                            Duis eu ante sed tellus efficitur rhoncus.</p>
-                            <p class="display_buttons">
+                    <div class="lp_content">
+                        <h1 class="lp_h1">Live your Power</h1>
+                        <p class="lp_p">At getleads Yoga something amazing is.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Sed auctor lorem et ultrices placerat. Pellentesque hendrerit tristique nibh eget imperdiet.
+                                        Duis eu ante sed tellus efficitur rhoncus.
+                        </p>
+                        <p class="display_buttons">
                             <button class="lp_button landing lp_button_green " onclick="location.href='#'">GET YOUR FREE WEEK</button>
                             <button class="lp_button lp_button_transparent" onclick="location.href='#'"><i class="far fa-play-circle lp_button_play"></i>WATCH THE WIDEO</button>
-                            </p>
-                        
+                        </p>
                     </div>
                 </div>
-                
             </div>
-       
-        </section>
+       </section>
         
         <section class="container ">
             <div class="courses_top">
@@ -90,10 +78,10 @@
                             <i class="far fa-circle"></i>
                             <i class="far fa-circle"></i>
                             </span>
-                               Beginer
+                                Beginer
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
+                                Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
                         <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
                     </div>
                 </div>
@@ -110,7 +98,7 @@
                             Intermediate
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
+                                Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
                         <button class="box_button box_button_transparent"onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
@@ -144,7 +132,7 @@
                             Advanced
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                             Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
+                                Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
                         <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
@@ -202,19 +190,22 @@
             </div>
 
         </footer>
-
+        <script type="text/javascript">
+            function menuChangeVisible() {
+                var x = document.getElementById("menu_hidden");
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            window.onresize = resize;
+            function resize(){
+                var x = document.getElementById("menu_hidden");
+                x.style.display = "none";
+            }
+        </script>
     </body>
-    <script type="text/javascript">
-        function menuChangeVisible(){
-            var node = document.getElementById('menu_hidden')
-           
-            if( node.style.display == "none") {
-                node.style.display  = "block";
-            }
-            else{
-                node.style.display  = 'none';
-
-            }
-        }
-    </script>
 </html>
