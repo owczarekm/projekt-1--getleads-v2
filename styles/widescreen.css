@@ -2,6 +2,7 @@
     width: 1140px;
     margin: 0 auto;
 }
+
 .box{
     position: relative;
     width: 30%;
@@ -16,9 +17,6 @@
     cursor:pointer;
 }
 
-nav{
-    padding:2vh;
-}
 .box{
     position: relative;
     width: 30%;
@@ -28,6 +26,7 @@ nav{
     vertical-align: middle;
     box-sizing: border-box;
 }
+
 .box_h2{
     font-size:17px;
     font-weight: 900;
@@ -39,6 +38,7 @@ nav{
     line-height: 20px;
     color:white;
 }
+
 .nav_containter{
     display:flex;
     justify-content:space-between;
@@ -56,11 +56,6 @@ nav{
     align-items: center;
     
 }
-/* .menu_links span {
-    
-    cursor:pointer;
-    
-} */
 
 .menu_links span {
     width:auto;
@@ -74,25 +69,25 @@ nav{
 }
 
 .menu_links span:hover{
-   background:none;}
+   background:none;
+}
 
 .menu_links > span:last-of-type{
     padding-left:0.5vw;
 }
 
-
-.menu_button{
-    font-size:15px;
-    font-weight: 700;
-    color:white;
-    text-align:center;
-    text-decoration:none;
-    padding:1vh;
-    border:none;
-    background-color:#55B68B;
-    border-radius:4px;
-    cursor:pointer;
-}
 .navbar_toggle{
     display:none;
+}
+
+.box_h2{
+    font-size:19px;
+    font-weight: 900;
+    color:white;
+}
+
+.box_text{
+    font-size:16px;
+    line-height: 20px;
+    color:white;
 }

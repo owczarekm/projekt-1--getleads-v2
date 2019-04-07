@@ -29,17 +29,17 @@
                         <span><a href="#">Section 3</a></span>
                         <span><a href="#">Section 4</a></span>
                         <span><a href="#">Section 5</a></span>
-                        <span><a href="#"><button class="menu_button">Get Action</button></a></span>
+                        <span><a href="#"><button class="btn btn_menu btn_green">Get Action</button></a></span>
                 </div>
             </div>
 
             <!-- "Hamburger menu" - ukryte menu ktore wyswietla sie do rozdzielczosci 992-->
             <div class="menu_links" id="menu_hidden" style="display: none;">                    
-                <span><a href="#">Section 2</a></span>
-                <span><a href="#">Section 3</a></span>
-                <span><a href="#">Section 4</a></span>
-                <span><a href="#">Section 5</a></span>
-                <span><a href="#"><button class="menu_button">Get Action</button></a></span>
+                <span><a href="index.html">Section 2</a></span>
+                <span><a href="index.html">Section 3</a></span>
+                <span><a href="index.html">Section 4</a></span>
+                <span><a href="index.html">Section 5</a></span>
+                <span><a href="index.htmls"><button class="btn btn_menu btn_green">Get Action</button></a></span>
             </div>    
         </nav>
         
@@ -53,8 +53,8 @@
                                         Duis eu ante sed tellus efficitur rhoncus.
                         </p>
                         <p class="display_buttons">
-                            <button class="lp_button landing lp_button_green " onclick="location.href='#'">GET YOUR FREE WEEK</button>
-                            <button class="lp_button lp_button_transparent" onclick="location.href='#'"><i class="far fa-play-circle lp_button_play"></i>WATCH THE WIDEO</button>
+                            <button class="btn btn_lp btn_green" onclick="location.href='#'">GET YOUR FREE WEEK</button>
+                            <button class="btn btn_transparent" onclick="location.href='#'"><i class="far fa-play-circle btn_play_icon"></i>WATCH THE WIDEO</button>
                         </p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent"onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
 
@@ -116,7 +116,7 @@
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
 
@@ -133,7 +133,7 @@
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
                 
@@ -149,7 +149,7 @@
                             Begginer
                         </p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>
                 
@@ -164,7 +164,7 @@
                             </span>        
                             Intermediate</p>
                         <p class="box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum diam sit amet ultrices commodo. Nunc sodales eu urna sed ornare.</p>
-                        <button class="box_button box_button_transparent" onclick="location.href='#'">View course</button>
+                        <button class="btn btn_box btn_transparent" onclick="location.href='#'">View course</button>
                     </div>      
                 </div>                      
             </div>
@@ -172,7 +172,7 @@
             <div class="courses_bottom margin_courses">
                 <p class="courses_p">Do you alredy have a particular topic in mind? Discover more of our specialized courses.
                 </p>
-                <button class="lp_button lp_button_green" onclick="location.href='#'">DISCOVER MORE COURSES</button>
+                <button class="btn btn_green btn_lp" onclick="location.href='#'">DISCOVER MORE COURSES</button>
             </div>
         </section>
 
@@ -193,6 +193,7 @@
         <script type="text/javascript">
             function menuChangeVisible() {
                 var x = document.getElementById("menu_hidden");
+                var y = document.getElementById("navbar_toggle");
                 if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {
