@@ -3,6 +3,7 @@
     width:730px;
     margin: 0 auto;
 }
+
 .box{
     position: relative;
     width: 47%;
@@ -12,6 +13,7 @@
     vertical-align: middle;
     box-sizing: border-box;
 }
+
 .box_content {
     position: absolute;
     left: 0;
@@ -23,3 +25,10 @@
     padding:10%;
     box-sizing:border-box;
 }
+/* powrot do orginalnej kolejnosci boxow  */
+.python { order: 1; }
+.android { order: 2; }
+.react { order: 3; }
+.node { order: 6; }
+.user_exper { order: 4; }
+.ios_mobile { order: 5; }

@@ -44,7 +44,6 @@
     font-weight: 700;
     display:flex;
     align-items: center;
-    
 }
 
 .menu_links span {
@@ -69,3 +68,10 @@
 .navbar_toggle{
     display:none;
 }
+/* powrot do orginalnej kolejnosci boxow */
+.python { order: 1; }
+.android { order: 2; }
+.react { order: 3; }
+.node { order: 4; }
+.user_exper { order: 5; }
+.ios_mobile { order: 6; }

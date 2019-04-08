@@ -92,16 +92,15 @@ body{
 
 .btn_transparent{
     background-color: transparent;
-
 }
 
 .btn_lp{
     box-shadow:0px 2px #477D66;
     padding:2vh;
     margin-right: 7px;
- }
+}
 
- .btn_play{
+.btn_play{
     box-shadow:none;
     padding:2vh;
     border:none;
@@ -111,7 +110,6 @@ body{
      font-size:15px;
      color:white;
      padding-right:5px;
-     
 }
 
 .display_buttons{
@@ -122,15 +120,14 @@ body{
 /* BUTTONS END */
 
 /* NAVIGATION */
-
 nav{
     background-color:white;
 }
+
 .logo{
     display: inline-block;
     cursor:pointer;
     opacity:0.8;
-    
 }
 
 .navbar_toggle {
@@ -167,14 +164,15 @@ a:link,a:visited,a:hover,a:active{
     background:none;
     color:#404B55;
 }
+
 .menu_links > span:hover a{
     opacity:0.5;
 }
+
 .menu_links > span:last-of-type a{
     background:invert(29%);
     opacity:1;
 }
-
 
 .menu_links span {
     width:100%;
@@ -187,8 +185,8 @@ a:link,a:visited,a:hover,a:active{
 }
 
 .menu_links span:hover{
-    background-color:rgba(211,211,211,.5)}
-
+    background-color:rgba(211,211,211,.5)
+}
 
 /* Font awesome color */
 i.fab {
@@ -198,7 +196,6 @@ i.fab {
 /* NAVIGATION END */
 
 /* COURSES */
-
 .courses_top{
     width: 100%;
     height: 100%;
@@ -316,6 +313,14 @@ i.fab {
     padding:20px;
     cursor: pointer;
 }
+
+/* zamiana kolejnosci boxow  */
+.python { order: 1; }
+.android { order: 2; }
+.react { order: 3; }
+.node { order: 6; }
+.user_exper { order: 4; }
+.ios_mobile { order: 5; }
 /* COURSES END */
 
 /* FOOTER */
