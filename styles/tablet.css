@@ -1,7 +1,6 @@
 .container
 {
     width:730px;
-    margin: 0 auto;
 }
 
 .box{
@@ -25,7 +24,7 @@
     padding:10%;
     box-sizing:border-box;
 }
-/* powrot do orginalnej kolejnosci boxow  */
+/* zmiana kolejnosci boxoww  */
 .python { order: 1; }
 .android { order: 2; }
 .react { order: 3; }
