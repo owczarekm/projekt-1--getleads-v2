@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <title>Projekt 1 - Getleads</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles/reset.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" media="screen and (min-width: 576px)" href="styles/mobile.css" />
         <link rel="stylesheet" media="screen and (min-width: 786px)" href="styles/tablet.css" />
@@ -17,7 +17,7 @@
         <nav>
             <div class="container nav_containter">
                 <div class="navbar_toggle">
-                    <a href="#" onclick="menuChangeVisible()"><i class="fas fa-bars "style="font-size:16px;"></i></a>
+                    <a href="#" onclick="menuChangeVisible()"><i class="fas fa-bars" style="font-size:16px;"></i></a>
                 </div>
                 <div class="logo">
                     <a href="#"><img src="media/logo-black.png" alt="Logo"></a>
@@ -39,7 +39,7 @@
                 <span><a href="index.html">Section 3</a></span>
                 <span><a href="index.html">Section 4</a></span>
                 <span><a href="index.html">Section 5</a></span>
-                <span><a href="index.htmls"><button class="btn btn_menu btn_green">Get Action</button></a></span>
+                <span><a href="index.html"><button class="btn btn_menu btn_green">Get Action</button></a></span>
             </div>    
         </nav>
         
@@ -52,10 +52,10 @@
                                         Sed auctor lorem et ultrices placerat. Pellentesque hendrerit tristique nibh eget imperdiet.
                                         Duis eu ante sed tellus efficitur rhoncus.
                         </p>
-                        <p class="display_buttons">
+                        <div class="display_buttons">
                             <button class="btn btn_lp btn_green btn_lp_size" onclick="location.href='#'">GET YOUR FREE WEEK</button>
-                            <button class="btn btn_transparent btn_lp_size" onclick="location.href='#'"><i class="far fa-play-circle btn_play_icon"></i>WATCH THE WIDEO</button>
-                        </p>
+                            <button class="btn btn_transparent btn_lp_size btn_flex" onclick="location.href='#'"><i class="far fa-play-circle btn_play_icon"></i>WATCH THE WIDEO</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
         
         <section class="container ">
             <div class="courses_top">
-                <h2 class="courses_h2">Popular Courses</h2>
+                <h3 class="courses_h2">Popular Courses</h2>
                 <p class="courses_p">Make your way down a Path and build specific skills that will
                     help you land an amazing job.Sapiente itaque vero iure quaerat assumenda molestiae cum.
                 </p>
@@ -71,7 +71,7 @@
             <div class="courses_boxes">
                 <div class="box box_green ">
                     <div class="box_content">
-                        <h2 class="box_h2">Programing in Python</h2>
+                        <h3 class="box_h3">Programing in Python</h2>
                         <p class="box_text"> 
                             <span class="level_icons">
                             <i class="fas fa-circle"></i>
@@ -88,7 +88,7 @@
 
                 <div class="box box_blue">
                     <div class="box_content">
-                        <h2 class="box_h2">Android Mobile Development</h2>
+                        <h3 class="box_h3">Android Mobile Development</h2>
                         <p class="box_text">
                             <span class="level_icons">
                                 <i class="fas fa-circle"></i>
@@ -105,7 +105,7 @@
 
                 <div class="box box_grey">
                     <div class="box_content">
-                        <h2 class="box_h2">React.js Wrokshop</h2>
+                        <h3 class="box_h3">React.js Wrokshop</h2>
                         <p class="box_text">
                             <span class="level_icons">
                                 <i class="fas fa-circle"></i>
@@ -122,7 +122,7 @@
 
                 <div class="box box_grey">
                     <div class="box_content">
-                        <h2 class="box_h2">Backend in Node.js</h2>
+                        <h3 class="box_h3">Backend in Node.js</h2>
                         <p class="box_text">
                             <span class="level_icons">
                                 <i class="fas fa-circle"></i>
@@ -139,7 +139,7 @@
                 
                 <div class="box box_green">
                     <div class="box_content">
-                        <h2 class="box_h2">User Experience Design</h2>
+                        <h3 class="box_h3">User Experience Design</h2>
                         <p class="box_text">
                             <span class="level_icons">
                                 <i class="fas fa-circle"></i>
@@ -155,7 +155,7 @@
                 
                 <div class="box box_blue">
                     <div class="box_content">
-                        <h2 class="box_h2">iOS Mobile Development</h2>
+                        <h3 class="box_h3">iOS Mobile Development</h2>
                         <p class="box_text">
                             <span class="level_icons">
                                 <i class="fas fa-circle"></i>
@@ -193,7 +193,6 @@
         <script type="text/javascript">
             function menuChangeVisible() {
                 var x = document.getElementById("menu_hidden");
-                var y = document.getElementById("navbar_toggle");
                 if (x.style.display == "none") {
                     x.style.display = "block";
                 } else {

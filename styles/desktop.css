@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-.box_h2{
+.box_h3{
     font-size:17px;
     font-weight: 900;
     color:white;
@@ -26,13 +26,6 @@
     font-size:14px;
     line-height: 20px;
     color:white;
-}
-
-.nav_containter{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    vertical-align: bottom;
 }
 
 .menu_links{
@@ -68,9 +61,13 @@
     display:none;
 }
 /* powrot do orginalnej kolejnosci boxow */
-.python { order: 1; }
-.android { order: 2; }
-.react { order: 3; }
-.node { order: 4; }
-.user_exper { order: 5; }
-.ios_mobile { order: 6; }
+.box:nth-child(1) { order: 1; }
+.box:nth-child(2) { order: 2; }
+.box:nth-child(3) { order: 3; }
+.box:nth-child(4) { order: 4; }
+.box:nth-child(5) { order: 5; }
+.box:nth-child(6) { order: 6; }
+
+.footer_icons li{
+    cursor: pointer;
+}
